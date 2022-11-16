@@ -1,0 +1,6 @@
+Celery
+Celery[Redis]
+entsoe-py
+requests
+requests-mock
+delorean

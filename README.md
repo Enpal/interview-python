@@ -12,7 +12,7 @@ This repository is the base work for a live coding interview at Enpal.
 
 ## Running tests
 
-`python -m unittest`
+`python -m unittest tests/forecast.py`
 
 ## (Optionally) running the appliction asynchronously
 
