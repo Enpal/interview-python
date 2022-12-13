@@ -34,7 +34,7 @@ def prepare_forecast():
     ts.to_csv('data/forecast.csv')
 
 def get_weather_forecast():
-    r = requests.get(f"https://archive-api.open-meteo.com/v1/era5?latitude={cities['Madrid']['latitude']}&longitude={cities['Madrid']['longitude']}&start_date=2022-10-09&end_date=2022-10-11&hourly=temperature_2m,windspeed_10m")
+    r = requests.get(f"https://archive-api.open-meteo.com/v1/era5?latitude={cities['Madrid']['lat']}&longitude={cities['Madrid']['long']}&start_date=2022-10-09&end_date=2022-10-11&hourly=temperature_2m,windspeed_10m")
     data = r.json()
     return data
 
