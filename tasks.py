@@ -20,4 +20,5 @@ def prepare_forecast():
 
 @app.task
 def get_weather_forecast():
-    get_weather_forecast_sync()
+    data = get_weather_forecast_sync()
+    return data
