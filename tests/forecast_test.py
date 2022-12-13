@@ -10,7 +10,7 @@ class TestForecastMethods(unittest.TestCase):
         data = get_weather_forecast()
         history = mock.request_history
         self.assertEqual(len(history), 1, "Should have been called once")
-        self.assertEqual(len(data['hourly']['temperature_2m']), 5, "Should have two temperature measurements")
+        self.assertEqual(len(data['hourly']['temperature_2m']), 2, "Should have two temperature measurements")
 
 if __name__ == '__main__':
     unittest.main()
